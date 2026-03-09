@@ -1,0 +1,49 @@
+{
+    "invoice_source": "",
+    "data": {
+        "order_id": 3,
+        "invoice_no": "INV-3",
+        "order_details": {
+            "order_date": "2025-11-26 12:22:02",
+            "total_price": "412106.00",
+            "order_status": "Processing"
+        },
+        "items": [
+            {
+                "name": "Product",
+                "quantity": 1,
+                "price": "80.00",
+                "product_id": 4
+            }
+        ]
+    },
+    "billing": {
+        "name": "Binayak Panigrahi",
+        "address": "",
+        "city": "Cuttack",
+        "state": "Maharashtra",
+        "pincode": 80,
+        "country": "India"
+    },
+    "shipping": {
+        "name": "Binayak Panigrahi",
+        "address": " ",
+        "city": "Cuttack",
+        "state": "Maharashtra",
+        "pincode": 80,
+        "country": "India"
+    },
+    "company": {
+        "ID": "1",
+        "VendorID": "2",
+        "Store_Name": "TEST",
+        "GSTNO": "DSLKHI7836JD",
+        "email": "binayakp38@protonmail.com",
+        "saddress": "Block no-D2, Flat-210, Xrbia Abode Jambhul home Jambhul Road, Pune, Maharashtra\\nBlock no-D2, Flat-2",
+        "phoneno": "23453535123452",
+        "pin_code": "23423",
+        "store_manager": "",
+        "logo": "",
+        "PAN": "DHIWSLIE3465FG"
+    }
+}

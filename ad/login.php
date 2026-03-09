@@ -35,23 +35,33 @@ if (empty($username) || empty($password)) {
     exit();
 }
 
-// Example query to find user
-$sql = "SELECT idstaffs, username, designation FROM staffs WHERE username = ?";
+// Query to find user with password hash
+$sql = "SELECT idstaffs, username, password, designation, store_id, vendor_id FROM staffs WHERE username = ?";
 // Using PDO
 $stmt = $pdo->prepare($sql);
 $stmt->execute([$username]);
 $userData = $stmt->fetch(PDO::FETCH_ASSOC);
 
-if ($userData) {
-    // For a real app, check password hash here, e.g. password_verify($password, $userData['password'])
+if (!$userData) {
+    echo json_encode(["success" => false, "message" => "User not found"]);
+} elseif (!password_verify($password, $userData['password'])) {
+    echo json_encode(["success" => false, "message" => "Password incorrect"]);
+} elseif ($userData['designation'] !== 'Global Administrator') {
+    echo json_encode(["success" => false, "message" => "Only Global Administrator can login. Your role: " . $userData['designation']]);
+} else {
+    // All checks passed - user is authenticated
     $_SESSION['userid'] = $userData['idstaffs'];
     $_SESSION['username'] = $userData['username'];
     $_SESSION['role'] = $userData['designation'];
+    $_SESSION['store_id'] = $userData['store_id'] ?? null;
+    $_SESSION['vendor_id'] = $userData['vendor_id'] ?? null;
 
     echo json_encode([
         "success" => true,
-        "role" => $userData['designation']
+        "role" => $userData['designation'],
+        "userid" => $userData['idstaffs'],
+        "username" => $userData['username'],
+        "store_id" => $userData['store_id'] ?? null,
+        "vendor_id" => $userData['vendor_id'] ?? null
     ]);
-} else {
-    echo json_encode(["success" => false, "message" => "Invalid username or password"]);
 }

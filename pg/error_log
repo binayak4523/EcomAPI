@@ -1,0 +1,20 @@
+[08-Aug-2025 07:05:39 UTC] PHP Warning:  Undefined array key "timestamp" in /home/ctkartco/public_html/api/pg/vendor/juspay/expresscheckout-php-sdk/lib/Model/JuspayResponse.php on line 9
+[08-Aug-2025 07:08:17 UTC] PHP Warning:  Undefined array key "timestamp" in /home/ctkartco/public_html/api/pg/vendor/juspay/expresscheckout-php-sdk/lib/Model/JuspayResponse.php on line 9
+[18-Sep-2025 06:12:06 UTC] PHP Warning:  require_once(/home/ctkartco/public_html/api/pg../db.php): Failed to open stream: No such file or directory in /home/ctkartco/public_html/api/pg/verify-payment.php on line 10
+[18-Sep-2025 06:12:06 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ctkartco/public_html/api/pg../db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ctkartco/public_html/api/pg/verify-payment.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/ctkartco/public_html/api/pg/verify-payment.php on line 10
+[18-Sep-2025 06:12:24 UTC] PHP Warning:  require_once(/home/ctkartco/public_html/api/pg../db.php): Failed to open stream: No such file or directory in /home/ctkartco/public_html/api/pg/verify-payment.php on line 10
+[18-Sep-2025 06:12:24 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ctkartco/public_html/api/pg../db.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ctkartco/public_html/api/pg/verify-payment.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/ctkartco/public_html/api/pg/verify-payment.php on line 10
+[18-Sep-2025 06:14:37 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in /home/ctkartco/public_html/api/pg/verify-payment.php:54
+Stack trace:
+#0 /home/ctkartco/public_html/api/pg/verify-payment.php(54): mysqli->prepare('UPDATE orders S...')
+#1 {main}
+  thrown in /home/ctkartco/public_html/api/pg/verify-payment.php on line 54
+[27-Sep-2025 08:26:29 UTC] PHP Parse error:  syntax error, unexpected token "catch" in /home/ctkartco/public_html/api/pg/verify-payment.php on line 79
+[27-Sep-2025 08:45:45 UTC] PHP Parse error:  syntax error, unexpected token "catch" in /home/ctkartco/public_html/api/pg/verify-payment.php on line 79
+[27-Sep-2025 08:58:48 UTC] PHP Parse error:  syntax error, unexpected token "catch" in /home/ctkartco/public_html/api/pg/verify-payment.php on line 79

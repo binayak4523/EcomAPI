@@ -1,0 +1,61 @@
+{
+	"folders": [
+		{
+			"path": "../../../../Users/binay/Documents/reactjs/multi-store/vendor"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"mcp": {
+			"servers": {
+				"mysql": {
+					"command": "npx",
+					"args": [
+						"@liangshanli/mcp-server-mysql@3.0.0"
+					],
+					"env": {
+						"MYSQL_HOST": "${input:MYSQL_HOST}",
+						"MYSQL_PORT": "${input:MYSQL_PORT}",
+						"MYSQL_USER": "${input:MYSQL_USER}",
+						"MYSQL_PASSWORD": "${input:MYSQL_PASSWORD}",
+						"MYSQL_DATABASE": "${input:MYSQL_DATABASE}",
+						"READONLY": "false",
+						"ALLOW_DDL": "false",
+						"ALLOW_DROP": "false",
+						"ALLOW_DELETE": "false"
+					},
+					"type": "stdio"
+				}
+			},
+			"inputs": [
+				{
+					"id": "MYSQL_HOST",
+					"type": "promptString",
+					"description": "MySQL host"
+				},
+				{
+					"id": "MYSQL_PORT",
+					"type": "promptString",
+					"description": "MySQL port"
+				},
+				{
+					"id": "MYSQL_USER",
+					"type": "promptString",
+					"description": "MySQL user"
+				},
+				{
+					"id": "MYSQL_PASSWORD",
+					"type": "promptString",
+					"description": "MySQL password"
+				},
+				{
+					"id": "MYSQL_DATABASE",
+					"type": "promptString",
+					"description": "MySQL database"
+				}
+			]
+		}
+	}
+}

@@ -36,7 +36,7 @@ if (!$data || !isset($data['category_name'])) {
 }
 
 // Insert query (adjust column names as needed)
-$sql = "INSERT INTO categories (category_name, description) VALUES (?, ?)";
+$sql = "INSERT INTO category (category_name, description) VALUES (?, ?)";
 try {
     $stmt = $pdo->prepare($sql);
     $stmt->execute([

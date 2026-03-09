@@ -3,4 +3,4 @@
 $host = 'localhost';
 $dbname = 'multi_vender';  // Adjust as needed
 $user = 'root';
-$password = '';
+$password = 'pass09876';

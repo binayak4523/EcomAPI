@@ -1,0 +1,6 @@
+{
+    "require": {
+        "juspay/expresscheckout-php-sdk": "^2.0",
+        "razorpay/razorpay": "^2.9"
+    }
+}

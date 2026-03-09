@@ -1,0 +1,40 @@
+[06-Nov-2025 04:44:49 UTC] PHP Warning:  require(fpdf/fpdf.php): Failed to open stream: No such file or directory in /home/ctkartco/public_html/api/generate_invoice.php on line 9
+[06-Nov-2025 04:44:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'fpdf/fpdf.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ctkartco/public_html/api/generate_invoice.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/ctkartco/public_html/api/generate_invoice.php on line 9
+[06-Nov-2025 07:06:42 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'p.product_id' in 'on clause' in /home/ctkartco/public_html/api/generate_invoice.php:188
+Stack trace:
+#0 /home/ctkartco/public_html/api/generate_invoice.php(188): mysqli->prepare('SELECT oi.*, p....')
+#1 {main}
+  thrown in /home/ctkartco/public_html/api/generate_invoice.php on line 188
+[06-Nov-2025 07:11:58 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'product_id' in 'where clause' in /home/ctkartco/public_html/api/generate_invoice.php:200
+Stack trace:
+#0 /home/ctkartco/public_html/api/generate_invoice.php(200): mysqli->prepare('SELECT * FROM p...')
+#1 {main}
+  thrown in /home/ctkartco/public_html/api/generate_invoice.php on line 200
+[06-Nov-2025 08:04:33 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'product_id' in 'where clause' in /home/ctkartco/public_html/api/generate_invoice.php:211
+Stack trace:
+#0 /home/ctkartco/public_html/api/generate_invoice.php(211): mysqli->prepare('SELECT * FROM p...')
+#1 {main}
+  thrown in /home/ctkartco/public_html/api/generate_invoice.php on line 211
+[06-Nov-2025 08:14:57 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'ctkartco_multi_vender.address' doesn't exist in /home/ctkartco/public_html/api/generate_invoice.php:229
+Stack trace:
+#0 /home/ctkartco/public_html/api/generate_invoice.php(229): mysqli->prepare('SELECT * FROM a...')
+#1 {main}
+  thrown in /home/ctkartco/public_html/api/generate_invoice.php on line 229
+[06-Nov-2025 09:04:54 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'ctkartco_multi_vender.address' doesn't exist in /home/ctkartco/public_html/api/generate_invoice.php:218
+Stack trace:
+#0 /home/ctkartco/public_html/api/generate_invoice.php(218): mysqli->prepare('SELECT * FROM a...')
+#1 {main}
+  thrown in /home/ctkartco/public_html/api/generate_invoice.php on line 218
+[06-Nov-2025 09:05:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'ctkartco_multi_vender.address' doesn't exist in /home/ctkartco/public_html/api/generate_invoice.php:229
+Stack trace:
+#0 /home/ctkartco/public_html/api/generate_invoice.php(229): mysqli->prepare('SELECT * FROM a...')
+#1 {main}
+  thrown in /home/ctkartco/public_html/api/generate_invoice.php on line 229
+[07-Nov-2025 09:15:37 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'ctkartco_multi_vender.address' doesn't exist in /home/ctkartco/public_html/api/generate_invoice.php:229
+Stack trace:
+#0 /home/ctkartco/public_html/api/generate_invoice.php(229): mysqli->prepare('SELECT * FROM a...')
+#1 {main}
+  thrown in /home/ctkartco/public_html/api/generate_invoice.php on line 229

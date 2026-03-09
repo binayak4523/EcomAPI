@@ -1,0 +1,128 @@
+
+[2025-09-27 09:43:20] DEBUG:
+----------------------------------------
+{
+    "raw_input": "{\"channel\":\"online\",\"order_id\":20,\"reference_number\":\"20\",\"order_date\":\"2025-09-27\",\"facility\":\"main_warehouse\",\"seller_details\":\"test\",\"customer_details\":\"kalachand beuria\",\"package_type\":\"box\",\"weight\":\"5\",\"length\":\"50\",\"width\":\"50\",\"height\":\"50\",\"total_boxes\":1,\"shipping_method\":\"standard\",\"payment_mode\":\"Prepaid\",\"cod_amount\":\"0\",\"total_amount\":\"\",\"special_instructions\":\"\"}"
+}
+----------------------------------------
+
+[2025-09-27 09:43:20] DEBUG:
+----------------------------------------
+{
+    "decoded_input": {
+        "channel": "online",
+        "order_id": 20,
+        "reference_number": "20",
+        "order_date": "2025-09-27",
+        "facility": "main_warehouse",
+        "seller_details": "test",
+        "customer_details": "kalachand beuria",
+        "package_type": "box",
+        "weight": "5",
+        "length": "50",
+        "width": "50",
+        "height": "50",
+        "total_boxes": 1,
+        "shipping_method": "standard",
+        "payment_mode": "Prepaid",
+        "cod_amount": "0",
+        "total_amount": "",
+        "special_instructions": ""
+    }
+}
+----------------------------------------
+
+[2025-09-27 09:43:20] DEBUG:
+----------------------------------------
+{
+    "full_input": {
+        "channel": "online",
+        "order_id": 20,
+        "reference_number": "20",
+        "order_date": "2025-09-27",
+        "facility": "main_warehouse",
+        "seller_details": "test",
+        "customer_details": "kalachand beuria",
+        "package_type": "box",
+        "weight": "5",
+        "length": "50",
+        "width": "50",
+        "height": "50",
+        "total_boxes": 1,
+        "shipping_method": "standard",
+        "payment_mode": "Prepaid",
+        "cod_amount": "0",
+        "total_amount": "",
+        "special_instructions": ""
+    },
+    "input_type": "array",
+    "raw_order_id": 20
+}
+----------------------------------------
+
+[2025-09-27 09:43:20] DEBUG:
+----------------------------------------
+{
+    "raw_order_id": 20,
+    "parsed_order_id": 20,
+    "validation_passed": true
+}
+----------------------------------------
+
+[2025-09-27 09:43:20] DEBUG:
+----------------------------------------
+{
+    "table_structures": {
+        "addresses": [
+            "id",
+            "UserID",
+            "country",
+            "name",
+            "phone_no",
+            "pin",
+            "address1",
+            "address2",
+            "landmark",
+            "city",
+            "state",
+            "default_address",
+            "state_code"
+        ],
+        "orders": [
+            "order_id",
+            "product_id",
+            "store_id",
+            "user_id",
+            "quantity",
+            "total_price",
+            "shipping_id",
+            "shipping_method",
+            "package_type",
+            "shipping_address1",
+            "shipping_address2",
+            "order_date",
+            "order_status",
+            "InvoiceNo",
+            "invoicedate",
+            "billingad_id",
+            "shippingad_id",
+            "pin_code",
+            "payment_method",
+            "signature",
+            "payment_status",
+            "status_id",
+            "accyear",
+            "updated_at",
+            "total_weight",
+            "shipping_weight",
+            "cod_amount"
+        ],
+        "store": [
+            "ID",
+            "VendorID",
+            "Store_Name",
+            "GSTNO"
+        ]
+    }
+}
+----------------------------------------

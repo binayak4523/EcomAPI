@@ -1,0 +1,264 @@
+
+[2025-10-12 05:30:31] DEBUG:
+----------------------------------------
+{
+    "raw_input": "{\"channel\":\"online\",\"order_id\":16,\"reference_number\":\"16\",\"order_date\":\"2025-10-12\",\"facility\":\"main_warehouse\",\"seller_details\":\"CT Kart\",\"customer_details\":\"\",\"package_type\":\"box\",\"weight\":\".5\",\"length\":\"20\",\"width\":\"20\",\"height\":\"20\",\"total_boxes\":1,\"shipping_method\":\"standard\",\"payment_mode\":\"COD\",\"cod_amount\":\"23\",\"total_amount\":\"\",\"special_instructions\":\"\"}"
+}
+----------------------------------------
+
+[2025-10-12 05:30:34] DEBUG:
+----------------------------------------
+{
+    "decoded_input": {
+        "channel": "online",
+        "order_id": 16,
+        "reference_number": "16",
+        "order_date": "2025-10-12",
+        "facility": "main_warehouse",
+        "seller_details": "CT Kart",
+        "customer_details": "",
+        "package_type": "box",
+        "weight": ".5",
+        "length": "20",
+        "width": "20",
+        "height": "20",
+        "total_boxes": 1,
+        "shipping_method": "standard",
+        "payment_mode": "COD",
+        "cod_amount": "23",
+        "total_amount": "",
+        "special_instructions": ""
+    }
+}
+----------------------------------------
+
+[2025-10-12 05:30:34] DEBUG:
+----------------------------------------
+{
+    "full_input": {
+        "channel": "online",
+        "order_id": 16,
+        "reference_number": "16",
+        "order_date": "2025-10-12",
+        "facility": "main_warehouse",
+        "seller_details": "CT Kart",
+        "customer_details": "",
+        "package_type": "box",
+        "weight": ".5",
+        "length": "20",
+        "width": "20",
+        "height": "20",
+        "total_boxes": 1,
+        "shipping_method": "standard",
+        "payment_mode": "COD",
+        "cod_amount": "23",
+        "total_amount": "",
+        "special_instructions": ""
+    },
+    "input_type": "array",
+    "raw_order_id": 16
+}
+----------------------------------------
+
+[2025-10-12 05:30:34] DEBUG:
+----------------------------------------
+{
+    "raw_order_id": 16,
+    "parsed_order_id": 16,
+    "validation_passed": true
+}
+----------------------------------------
+
+[2025-10-12 05:30:34] DEBUG:
+----------------------------------------
+{
+    "table_structures": {
+        "addresses": [
+            "id",
+            "UserID",
+            "country",
+            "name",
+            "phone_no",
+            "pin",
+            "address1",
+            "address2",
+            "landmark",
+            "city",
+            "state",
+            "default_address",
+            "state_code"
+        ],
+        "orders": [
+            "order_id",
+            "product_id",
+            "store_id",
+            "user_id",
+            "quantity",
+            "total_price",
+            "shipping_id",
+            "shipping_method",
+            "package_type",
+            "shipping_address1",
+            "shipping_address2",
+            "order_date",
+            "order_status",
+            "InvoiceNo",
+            "invoicedate",
+            "billingad_id",
+            "shippingad_id",
+            "pin_code",
+            "payment_method",
+            "signature",
+            "payment_status",
+            "status_id",
+            "accyear",
+            "updated_at",
+            "total_weight",
+            "shipping_weight",
+            "cod_amount"
+        ],
+        "store": [
+            "ID",
+            "VendorID",
+            "Store_Name",
+            "email",
+            "saddress",
+            "phoneno",
+            "pin_code",
+            "store_manager",
+            "GSTNO",
+            "logo"
+        ]
+    }
+}
+----------------------------------------
+
+[2025-10-12 05:30:34] REQUEST:
+----------------------------------------
+{
+    "url": "https:\/\/staging-express.delhivery.com\/api\/cmu\/create.json",
+    "data": {
+        "format": "json",
+        "data": {
+            "shipments": [
+                {
+                    "client": "2019ab-CTKartRetailIndia-do",
+                    "name": "alex dark",
+                    "order": "16",
+                    "products_desc": "sadf x 1",
+                    "order_date": "2025-06-14",
+                    "payment_mode": "COD",
+                    "total_amount": "23.00",
+                    "add": "mahavir apartment 6E\/link road\/cuttack mahavir apartment 6E\/link road\/cuttack",
+                    "address_type": "home",
+                    "city": "cuttack",
+                    "state": "Maharashtra",
+                    "country": "India",
+                    "phone": "2147483647",
+                    "pin": 753012,
+                    "weight": "0.500",
+                    "shipment_length": "20.00",
+                    "shipment_width": "20.00",
+                    "shipment_height": "20.00",
+                    "quantity": 1,
+                    "cod_amount": "23.00",
+                    "return_pin": 753014,
+                    "return_city": "",
+                    "return_phone": "7008505300",
+                    "return_add": "Plot No : C\/50 , Sector - 10 , CDA ,  Pin - 753014",
+                    "return_state": "",
+                    "return_country": "India"
+                }
+            ],
+            "pickup_location": {
+                "name": "CTKart",
+                "add": "Plot No : C\/50 , Sector - 10 , CDA ,  Pin - 753014",
+                "city": "",
+                "pin": 753014,
+                "state": "",
+                "country": "India",
+                "phone": "7008505300"
+            }
+        }
+    }
+}
+----------------------------------------
+
+[2025-10-12 05:30:34] DEBUG:
+----------------------------------------
+{
+    "delhivery_request_data": {
+        "format": "json",
+        "data": "{\"shipments\":[{\"client\":\"2019ab-CTKartRetailIndia-do\",\"name\":\"alex dark\",\"order\":\"16\",\"products_desc\":\"sadf x 1\",\"order_date\":\"2025-06-14\",\"payment_mode\":\"COD\",\"total_amount\":\"23.00\",\"add\":\"mahavir apartment 6E\\\/link road\\\/cuttack mahavir apartment 6E\\\/link road\\\/cuttack\",\"address_type\":\"home\",\"city\":\"cuttack\",\"state\":\"Maharashtra\",\"country\":\"India\",\"phone\":\"2147483647\",\"pin\":753012,\"weight\":\"0.500\",\"shipment_length\":\"20.00\",\"shipment_width\":\"20.00\",\"shipment_height\":\"20.00\",\"quantity\":1,\"cod_amount\":\"23.00\",\"return_pin\":753014,\"return_city\":\"\",\"return_phone\":\"7008505300\",\"return_add\":\"Plot No : C\\\/50 , Sector - 10 , CDA ,  Pin - 753014\",\"return_state\":\"\",\"return_country\":\"India\"}],\"pickup_location\":{\"name\":\"CTKart\",\"add\":\"Plot No : C\\\/50 , Sector - 10 , CDA ,  Pin - 753014\",\"city\":\"\",\"pin\":753014,\"state\":\"\",\"country\":\"India\",\"phone\":\"7008505300\"}}"
+    }
+}
+----------------------------------------
+
+[2025-10-12 05:30:34] DEBUG:
+----------------------------------------
+{
+    "formatted_request": {
+        "shipments": [
+            {
+                "client": "2019ab-CTKartRetailIndia-do",
+                "name": "alex dark",
+                "order": "16",
+                "products_desc": "sadf x 1",
+                "order_date": "2025-06-14",
+                "payment_mode": "COD",
+                "total_amount": "23.00",
+                "add": "mahavir apartment 6E\/link road\/cuttack mahavir apartment 6E\/link road\/cuttack",
+                "address_type": "home",
+                "city": "cuttack",
+                "state": "Maharashtra",
+                "country": "India",
+                "phone": "2147483647",
+                "pin": 753012,
+                "weight": "0.500",
+                "shipment_length": "20.00",
+                "shipment_width": "20.00",
+                "shipment_height": "20.00",
+                "quantity": 1,
+                "cod_amount": "23.00",
+                "return_pin": 753014,
+                "return_city": "",
+                "return_phone": "7008505300",
+                "return_add": "Plot No : C\/50 , Sector - 10 , CDA ,  Pin - 753014",
+                "return_state": "",
+                "return_country": "India"
+            }
+        ],
+        "pickup_location": {
+            "name": "CTKart",
+            "add": "Plot No : C\/50 , Sector - 10 , CDA ,  Pin - 753014",
+            "city": "",
+            "pin": 753014,
+            "state": "",
+            "country": "India",
+            "phone": "7008505300"
+        }
+    }
+}
+----------------------------------------
+
+[2025-10-12 05:30:34] RESPONSE:
+----------------------------------------
+{
+    "httpCode": 200,
+    "response": {
+        "cash_pickups_count": 0,
+        "package_count": 0,
+        "upload_wbn": null,
+        "replacement_count": 0,
+        "rmk": "shipment list contains no data.",
+        "pickups_count": 0,
+        "packages": [],
+        "cash_pickups": 0,
+        "cod_count": 0,
+        "success": false,
+        "prepaid_count": 0,
+        "error": true,
+        "cod_amount": 0
+    }
+}
+----------------------------------------
